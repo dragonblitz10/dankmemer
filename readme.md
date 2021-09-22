@@ -32,7 +32,7 @@ client.on("ready", () => {
   console.log(`Memer is online!`);
 });
 
-client.on("message", async (message) => {
+client.on("messageCreate", async (message) => {
   if (!message.guild || message.author.bot) return;
   if (message.content === "spank") {
     let userone = message.author.displayAvatarURL;
